@@ -2,13 +2,13 @@
 
 Routing: in computer networking it refers to the process of forwarding data packets from one network to another via intermediate routers.The router selects the best path for data to travel based on various criteria such as network traffic,cost and distance.Routing enables communication between different networks and allows the internet to function.
 
-![Alt text](Pasted%20image%2020230131112022.png)
+![Alt text](IMAGES/Pasted%20image%2020230131112022.png)
 
 ---
 
-![Alt text](Pasted%20image%2020230131112544.png)
+![Alt text](IMAGES/Pasted%20image%2020230131112544.png)
 
-![Alt text](Pasted%20image%2020230131114600.png)
+![Alt text](IMAGES/Pasted%20image%2020230131114600.png)
 
 ---
 
@@ -23,8 +23,8 @@ Routing: in computer networking it refers to the process of forwarding data pack
 - Augumentation,load balancing, and defined areas
 ---
 ## Spanning Trees (Abstractly)
-![Alt text](Pasted%20image%2020230131115707.png)
-![Alt text](Pasted%20image%2020230131115826.png)
+![Alt text](IMAGES/Pasted%20image%2020230131115707.png)
+![Alt text](IMAGES/Pasted%20image%2020230131115826.png)
 
 ---
 ## Distance Vector Algorithm (RIP) #RIP
@@ -39,14 +39,14 @@ Routing: in computer networking it refers to the process of forwarding data pack
 		-  $$ Distance to others ==\infty $$
 	- Routing table reflects node's beliefes
 
-![Alt text](Pasted%20image%2020230131120518.png)
+![Alt text](IMAGES/Pasted%20image%2020230131120518.png)
 
 ## Iteration Steps
 
-![Alt text](Pasted%20image%2020230131120636.png)
+![Alt text](IMAGES/Pasted%20image%2020230131120636.png)
 
 ### Example Iteration Steps
-![Alt text](Pasted%20image%2020230131120717.png)
+![Alt text](IMAGES/Pasted%20image%2020230131120717.png)
 
 ### Details
 > No single host has all routing information.
@@ -63,18 +63,18 @@ Routing: in computer networking it refers to the process of forwarding data pack
 > All weights  =1 called "HOP COUNT" ( Default RIP Action)
 ---
 ## Dynamic Networks
-![Alt text](Pasted%20image%2020230131121224.png)
+![Alt text](IMAGES/Pasted%20image%2020230131121224.png)
 # Link Failure Examples
 ##### Example 1
-![Alt text](Pasted%20image%2020230131121325.png)
-![Alt text](Pasted%20image%2020230131121406.png)
+![Alt text](IMAGES/Pasted%20image%2020230131121325.png)
+![Alt text](IMAGES/Pasted%20image%2020230131121406.png)
 
-![Alt text](Pasted%20image%2020230131121509.png)![Alt text](Pasted%20image%2020230131121546.png)
+![Alt text](IMAGES/Pasted%20image%2020230131121509.png)![Alt text](IMAGES/Pasted%20image%2020230131121546.png)
 ### Example 2
-![Alt text](Pasted%20image%2020230131121630.png)
-![Alt text](Pasted%20image%2020230131121652.png)
-![Alt text](Pasted%20image%2020230131121738.png)
-![Alt text](Pasted%20image%2020230131121804.png)
+![Alt text](IMAGES/Pasted%20image%2020230131121630.png)
+![Alt text](IMAGES/Pasted%20image%2020230131121652.png)
+![Alt text](IMAGES/Pasted%20image%2020230131121738.png)
+![Alt text](IMAGES/Pasted%20image%2020230131121804.png)
 
 ---
 ## Network Partition
@@ -126,14 +126,14 @@ In essence, Split Horizon helps to maintain the accuracy and consistency of the 
 In this approach, the router waits for a specified period of time after receiving a distance update before accepting any further updates. This helps to prevent the rapid propagation of incorrect information.
 
 ### Open Shortest Path First (OSPF)
-![Alt text](Pasted%20image%2020230131124520.png)
+![Alt text](IMAGES/Pasted%20image%2020230131124520.png)
 
 ### OSPF STEPS
 
-![Alt text](Pasted%20image%2020230131124656.png)
+![Alt text](IMAGES/Pasted%20image%2020230131124656.png)
 
 ### OSPF FEATURES
-![Alt text](Pasted%20image%2020230131124717.png)
+![Alt text](IMAGES/Pasted%20image%2020230131124717.png)
 
 ### Dijkstra’s Algorithm #Dijkstra 
 > Nodes has two lists - Confirmed and Tentative - pairs of (Destiniation,Cost,Next-Hop)
@@ -148,5 +148,5 @@ In this approach, the router waits for a specified period of time after receivin
 
 ## Some examples on Dijkastra #Dijkstra
 
-![Alt text](Pasted%20image%2020230131125829.png)
-![Alt text](Pasted%20image%2020230131125846.png)
+![Alt text](IMAGES/Pasted%20image%2020230131125829.png)
+![Alt text](IMAGES/Pasted%20image%2020230131125846.png)
