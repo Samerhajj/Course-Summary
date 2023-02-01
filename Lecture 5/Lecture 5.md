@@ -144,4 +144,8 @@
 
 >In summary, a BGP speaker is a network device that implements the BGP routing protocol and is responsible for exchanging routing information, maintaining the routing table, and determining the best paths to reach destinations in the network.
 
+---
+# Concept Map
 
+
+![[BGP CONCEPT.pdf]]
