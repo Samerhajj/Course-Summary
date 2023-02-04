@@ -45,7 +45,7 @@ LSR (Label Switching Router) and LER (Label Edge Router) are terms used in MPLS 
 ---
 # Resource Allocation
 - When we have a real network we must deal with contention and congestion
-	- too many users. not enough resoiurces
+	- too many users. not enough resources
 
 - Congestion can come from:
 	- too many users trying to make small connections
@@ -174,9 +174,9 @@ Priority queuing helps to provide a more predictable and consistent network perf
 - Packet i arrives at time Ai,it has size Pi,and begins being sent at Si
 	- Then it finishes being sent at  $$ F_i = S_i+P_i$$
 - What is `S_i`?
-	- Case 1: there is another Packet F_(i-1) from the flow being sent on the line  - then  $$ S_i = F_{i-1}$$
+	- Case 1: there is another Packet F_(i-1) from the flow being sent on the line  - then  $$S_i = F_{i-1}$$
 	- Case 2: The line is free - then $$S_i=A_i$$
-- Result: $$ F_i=max(F_{i-1},A_i)+P_i$$
+- Result: $$F_i=max(F_{i-1},A_i)+P_i$$
 • But there are other flows on the router too
 – The “tick” should be when each flow had a chance to send 1 byte
 – So slow down the clock calculations for 𝐴𝑖 based on the number of active queues
