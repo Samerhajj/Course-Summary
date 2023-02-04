@@ -172,7 +172,7 @@ Priority queuing helps to provide a more predictable and consistent network perf
 		- Determine when it would have finished being sent based on when it arrived - save it with the packet in the queue
 		- Think that a 500B packet takes 500 `ticks` to send
 - Packet i arrives at time Ai,it has size Pi,and begins being sent at Si
-	- Then it finishes being sent at  $$ F_i = S_i+P_i$$
+	- Then it finishes being sent at  $$F_i = S_i+P_i$$
 - What is `S_i`?
 	- Case 1: there is another Packet F_(i-1) from the flow being sent on the line  - then  $$S_i = F_{i-1}$$
 	- Case 2: The line is free - then $$S_i=A_i$$
