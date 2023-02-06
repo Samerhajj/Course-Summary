@@ -170,6 +170,9 @@ Priority queuing helps to provide a more predictable and consistent network perf
 	- Each queue gets to send one packet at a time,but we don't interrupt.
 	- But what if someone sends 1000B packets and another sends 500B packet?
 
+`In Fair Queuing, packets are divided into flows, which are given equal time slices in a round-robin fashion. This means that regardless of the size of the packet, each flow is guaranteed to receive an equal share of the available bandwidth.
+`Fair Queuing is a queuing algorithm that is used in computer networking to ensure that all the incoming packets are queued and transmitted in an equal and fair manner. It helps to prevent overloading of network resources and optimizes network performance by ensuring that each packet gets an equal chance of transmission, without any discrimination.``
+
 - For each packet:
 	- Imagine there are no other flows on the router
 		- Determine when it would have finished being sent based on when it arrived - save it with the packet in the queue
