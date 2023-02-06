@@ -51,3 +51,67 @@ What is the purpose of the LS Request message? What causes a sender to send it?
 8. What is the purpose of the LS Acknowledge message? What information is included in the LSA entries?
 	- The response to a sucessful update message ( flooding is reliable)
 
+### Recitation 4
+#aggregateRouting 
+## Aggregate Routes
+
+## ISP 1.1
+Consider an ISP with the following address range: 192.4.0.0/14. It has the following customers:
+1. Customer 1: 192.4.0.0 - 192.4.15.255
+2. Customer 2: 192.4.16.0 - 192.4.31.255 
+3. Customer 3: 192.4.32.0 - 192.4.47.255 
+Perform the following tasks:
+`(a) Write down the aggregate routes (IP address/mask) for each customer.
+`(b) What would happen if Customer 3 bought the address range above, but the ISP accidentally advertised the aggregate route 192.4.32.0/19 for it?` 
+`(c) Write down aggregate route for Customer 3 if it would buy 192.4.32.0 - 192.4.127.255 instead (hint: you may need more than one route).``
+
+### Answer 1.1
+
+1. Customer 1: $$192.4.0.0 - 192.4.15.255$$
+Customer 1 First IP:
+	$$11000000 \ 00000100 \ 00000000 \ 00000000$$
+Customer 1 Range IP: $$11000000 \ 00000100 \ 00001111 \ 11111111$$
+$$ Customer\ 1 :192.4.0.0/20$$
+2. Customer 2: $$192.4.16.0-192.4.31.255$$
+$$11000000 \ 00000100 \ 00010000 \ 00000000$$
+$$11000000 \ 00000100 \ 00011111 \ 11111111$$
+$$Customer\ 2\  : 192.4.16.0/20$$
+3. Customer 3:$$192.4.32.0 - 192.4.47.255$$
+$$11000000\ 00000100\ 00100000\ 00000000$$
+$$11000000\ 00000100\ 00101111\ 11111111$$
+$$Customer\ 3 : 192.4.32.0/20$$
+b. If Customer 3 got 192.4.32.0/19 it would include addresses even not in its range and therefore cause traffic not intenden for it to be routed in its direction.
+
+c. $$Customer \ 3:192.4.32.0 - 192.4.127.255$$
+$$11000000\ 00000100\ 00100000\ 00000000$$
+$$11000000\ 00000100\ 00111111\ 11111111$$
+$$11000000\ 00000100\ 01000000\ 00000000$$
+---
+$$11000000\ 00000100\ 01111111\ 11111111$$
+
+
+1. $$192.4.32.0/19$$
+2. $$192.4.64.0/18$$
+---
+
+![Alt text](IMAGES/Pasted%20image%2020230206232633.png)
+
+ 8 bits. - 32 bits
+ 0 and 1's
+$$2^{32-18}=2^{14}=16,384\ addresses.$$
+b)
+1. Customer 1
+	$$38.58.200.0\ 38.58.207.255$$
+	$$00100110\ 00111010\ 11001000\ 00000000$$
+		$$00100110\ 00111010\ 11001111\ 11111111$$
+		$$Customer\ 1:38.58.200.0/21$$
+2. Customer 2:
+	$$38.58.208.0\ 38.58.215.255$$
+		$$00100110\ 00111010\ 11010000\ 00000000$$
+			$$00100110\ 00111010\ 11010111\ 11111111$$
+$$Customer\ 2:38.58.208.0/21$$
+3. Customer 3:$$38.58.216.0-38.58.223.255$$
+$$00100110\ 00111010\ 11011000\ 00000000$$
+$$00100110\ 00111010\ 11011111\ 11111111$$
+$$Customer\ 3:38.58.216.0/21$$
+
