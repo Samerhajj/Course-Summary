@@ -54,3 +54,6 @@ ARP (Address Resolution Protocol) is a protocol used to map an IP address to a p
 ![Alt text](IMAGES/Pasted%20image%2020230204160805.png)
 ![Alt text](IMAGES/Pasted%20image%2020230204160813.png)
 	To reach networks with multicast traffic, a multicast tree is usually built to distribute the traffic from the sender to all interested receivers in the network. The tree can be either for the whole group or per sender. The tree needs to be discovered so new networks can be added and traffic can be distributed to them. Intermediate nodes in the tree can carry traffic, but it is not always necessary. Whether they should or not depends on the specific requirements of the network. The use of multicast trees helps to reduce the amount of broadcast traffic and makes the distribution of multicast traffic more efficient.
+
+### OVERLAPPING
+Overlapping in multicast refers to the situation where two or more multicast groups have a common set of receivers. This means that some receivers receive the same multicast traffic from multiple sources, creating overlapping groups. This can lead to network congestion and bandwidth utilization issues, so it's important to manage overlapping groups effectively to ensure network efficiency and performance.
