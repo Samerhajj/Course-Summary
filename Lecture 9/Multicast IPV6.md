@@ -2,7 +2,7 @@
 ![Alt text](IMAGES/Pasted%20image%2020230206095858.png)
 ### Distance Vector Multicast Routing Protocol
 ![Alt text](IMAGES/Pasted%20image%2020230206095923.png)
-## Prune and Draft
+## Prune and Graft
 
 >Prune message is a type of multicast control message used in Protocol Independent Multicast (PIM) to control the distribution of multicast traffic in a network. It is used by routers to stop forwarding multicast data to branches of a multicast distribution tree that don't have any receivers. The prune message is sent upstream to the multicast source to stop sending traffic to the specific branch. This helps to reduce the amount of unnecessary multicast traffic and improve network efficiency.
 
