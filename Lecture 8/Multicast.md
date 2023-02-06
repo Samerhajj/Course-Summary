@@ -57,3 +57,4 @@ ARP (Address Resolution Protocol) is a protocol used to map an IP address to a p
 
 ### OVERLAPPING
 Overlapping in multicast refers to the situation where two or more multicast groups have a common set of receivers. This means that some receivers receive the same multicast traffic from multiple sources, creating overlapping groups. This can lead to network congestion and bandwidth utilization issues, so it's important to manage overlapping groups effectively to ensure network efficiency and performance.
+

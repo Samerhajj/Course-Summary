@@ -107,6 +107,9 @@ Utilization refers to the percentage of the total available resources that are b
 |   Host centric, and often…	|   Router centric, and therefore often…	|
 |   • Window based	|   Rate based	|
 
+"Best effort" in resource allocation refers to a method of assigning resources in a network without any guarantees on the performance or quality of the service provided. In this approach, the network does its best to allocate resources to the data being transmitted, but it does not guarantee a specific level of performance or quality of service. 
+In contrast, Quality of Service (QoS) is a method of allocating resources that provides specific guarantees on the performance and quality of the service. In QoS, resources are reserved in advance for specific types of traffic, and the network is responsible for delivering that traffic with the specified performance guarantees.
+
 ---
 ## Congestion Control vs Avoidance
 ![Alt text](IMAGES/Pasted%20image%2020230204150727.png)
