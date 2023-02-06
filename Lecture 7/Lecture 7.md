@@ -1,4 +1,4 @@
-2
+
 ## Weighted Fair Queuing,Congestion Avoidance
 ---
 # Weighted Fair Queuing
