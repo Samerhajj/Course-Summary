@@ -54,9 +54,10 @@ The Transmission Control Protocol (TCP) packet format includes several fields th
 -  Sequence Number: a 32-bit field that indicates the order of the data being sent.
 - Acknowledgment Number: a 32-bit field that indicates which data has been received. 
  - Header Length: a 4-bit field that specifies the length of the TCP header in 32-bit words. 
-  - Flags: a set of 6 bits that specify various control information for the transmission of data. - Window Size: a 16-bit field that specifies the amount of data that the recipient is able to receive.
+  - Flags: a set of 6 bits that specify various control information for the transmission of data. 
+  - Window Size: a 16-bit field that specifies the amount of data that the recipient is able to receive.
   - Checksum: a 16-bit field that is used to detect errors in the data transmission. 
-  - Urgent Pointer: a 16-bit field that is used to indicate the end of urgent data. - 
+  - Urgent Pointer: a 16-bit field that is used to indicate the end of urgent data. 
   - Options: a variable-length field that includes optional information for the transmission of data. 
   
   The flags in a TCP packet include several bits that specify various control information for the transmission of data. Some of the most important flags include:
@@ -80,6 +81,13 @@ The Transmission Control Protocol (TCP) packet format includes several fields th
 
 ---
 ![Alt text](IMAGES/Pasted%20image%2020230205152335.png)
+
+---
+![Alt text](IMAGES/Pasted%20image%2020230207171930.png)
+![Alt text](IMAGES/Pasted%20image%2020230207172034.png)
+![Alt text](IMAGES/Pasted%20image%2020230207172123.png)
+![Alt text](IMAGES/Pasted%20image%2020230207172234.png)
+![Alt text](IMAGES/Pasted%20image%2020230207172330.png)
 
 ---
 # We found an error
