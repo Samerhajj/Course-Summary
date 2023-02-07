@@ -4,7 +4,7 @@
 
 >Intra-network routing, also known  as interior routing, refers to the routing of data packets within a single network.In this type of routing, routers use routing protocols to determine the best path for data packets to travel from one point to another within the same network. The **Goal of intra-network routing** is to optimize network performance and ensure reliable delivery of data packets.
 
->Inter-network routing,also known as exterior routing. refers to the routing of data packets between different networks.This type of routing is used when data packets need to be sent from one network to another, such as from a local network to the internet. In inter-network routing, routers use routing protocols to determine the best path for data packets to travel between networks. **The goal of inter-network routing** is to optimize the flow of data packets between networks and ensure reliable delivery of data packets between different netowrks
+>Inter-network routing,also known as exterior routing. refers to the routing of data packets between different networks.This type of routing is used when data packets need to be sent from one network to another, such as from a local network to the internet. In inter-network routing, routers use routing protocols to determine the best path for data packets to travel between networks. **The goal of inter-network routing** is to optimize the flow of data packets between networks and ensure reliable delivery of data packets between different networks
 
 ##### Summarization
 >Intra-network routing focuses on optimizing the flow of data packets within a single network . while inter-network routing focuses on optimizing the flow of data packets between different networks.
@@ -50,6 +50,8 @@
 ### Summary
 >A stub network is a simple,single-homed network that only recieves and sends traffic from its own devices, while a transift network is a multi-homed network that acts as a relay for traffic from other networks.
 
+![Alt text](IMAGES/Pasted%20image%2020230207181326.png)
+
 ![Alt text](IMAGES/Pasted%20image%2020230201134859.png)
 
 ---
@@ -63,6 +65,7 @@
 
 ### Summary
 >Inter-AS routing presents several challenges including scalability,load balancing,privacy and policy management.To overcome these challenges, service providers must employ efficient and scalable routing protocols, implement robust security measures, and have the ability to control and configure routing policies.
+
 
 ---
 ## CIDR
@@ -104,3 +107,5 @@ and Mask
 
 ---
 output
+
+Subnetting is the process of dividing a larger network into smaller subnetworks, called subnets. Each subnet has its own network address and can be used to create logical groupings of devices within a larger network. This allows administrators to better manage the network by dividing it into smaller, more manageable segments. Subnetting is performed by borrowing bits from the host portion of an IP address to create a new subnet mask. This new subnet mask defines the size of the subnetwork and determines the number of available hosts within each subnet. By subnetting a network, administrators can improve network security and performance by better controlling the flow of traffic within the network. Additionally, subnetting can help to conserve IP addresses by allowing administrators to reuse the same address space for different subnets. In summary, subnetting is the process of dividing a larger network into smaller subnetworks, called subnets, to improve network security and performance, and to conserve IP addresses.
