@@ -13,6 +13,8 @@
 # User Datagram Protocol (UDP)
 ![Alt text](IMAGES/Pasted%20image%2020230205151244.png)
 ![Alt text](IMAGES/Pasted%20image%2020230205151332.png)
+>A multiplexer (also known as MUX) is a device that selects one of several input signals and forwards the selected input to a single output line. It can be thought of as a switch that directs the flow of data from multiple inputs to a single output. On the other hand, a demultiplexer (also known as a DMUX) takes a single input signal and forwards it to one of several outputs. It acts as the reverse of a multiplexer, directing the flow of data from a single input to multiple outputs. Both multiplexers and demultiplexers are essential components in digital electronics and computer systems for transmitting and receiving data.
+
 ### Using Ports
 - Client contacts Server at a well-known port
 	- SMTP: port 25
@@ -28,6 +30,9 @@
 	- Implemented differently on different OS's
 	- Typically a message queue
 
+
+
+>UDP stands for User Datagram Protocol, and it is one of the core protocols of the Internet Protocol (IP) suite. It is a connectionless and unreliable protocol that is used for transmitting data between applications on different computers. Unlike the Transmission Control Protocol (TCP), which provides reliable, ordered, and error-checked delivery of data, UDP is designed to be fast and efficient, with minimal overhead. This makes it ideal for applications that require real-time communication, such as online gaming, video conferencing, or streaming media. In UDP, data is sent in the form of datagrams, which are self-contained units of data that contain both the payload data and the source and destination addresses. These datagrams are sent to the recipient without any guarantee of delivery, and it is up to the application layer to handle any errors or retransmissions. Despite its unreliability, UDP is widely used because it is simple and efficient, and it provides a low-level mechanism for transmitting data between applications that don't require the overhead and complexity of TCP.
 ---
 #TCP
 ## Transmission Control Protocol(TCP)
@@ -42,6 +47,28 @@
 ![Alt text](IMAGES/Pasted%20image%2020230205151802.png)
 
 ![Alt text](IMAGES/Pasted%20image%2020230205152106.png)
+
+The Transmission Control Protocol (TCP) packet format includes several fields that are used for reliable data transmission. Here is a brief overview of the most important fields in a TCP packet:
+-  Source Port: a 16-bit field that specifies the port number of the sender.
+-  Destination Port: a 16-bit field that specifies the port number of the recipient. 
+-  Sequence Number: a 32-bit field that indicates the order of the data being sent.
+- Acknowledgment Number: a 32-bit field that indicates which data has been received. 
+ - Header Length: a 4-bit field that specifies the length of the TCP header in 32-bit words. 
+  - Flags: a set of 6 bits that specify various control information for the transmission of data. - Window Size: a 16-bit field that specifies the amount of data that the recipient is able to receive.
+  - Checksum: a 16-bit field that is used to detect errors in the data transmission. 
+  - Urgent Pointer: a 16-bit field that is used to indicate the end of urgent data. - 
+  - Options: a variable-length field that includes optional information for the transmission of data. 
+  
+  The flags in a TCP packet include several bits that specify various control information for the transmission of data. Some of the most important flags include:
+   - URG: The Urgent Pointer field is valid and indicates the end of urgent data.
+   - ACK: Acknowledgment of data receipt is required. 
+   - PSH: The receiver should pass the data to the application as soon as possible.
+   - RST: The connection should be reset. 
+   - SYN: Synchronize sequence numbers to initiate a connection.
+   - FIN: The sender has no more data to transmit and wants to close the connection. 
+   
+   These flags are used to control the flow of data and to ensure reliable and error-free transmission of data over a TCP connection.
+   
 ## HandShake
 ![Alt text](IMAGES/Pasted%20image%2020230205152136.png)
 
