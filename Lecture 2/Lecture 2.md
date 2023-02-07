@@ -1,6 +1,6 @@
 ## Intra-network Routing: RIP and OSPF
 
-Routing: in computer networking it refers to the process of forwarding data packets from one network to another via intermediate routers.The router selects the best path for data to travel based on various criteria such as network traffic,cost and distance.Routing enables communication between different networks and allows the internet to function.
+	Routing: in computer networking it refers to the process of forwarding data packets from one network to another via intermediate routers.The router selects the best path for data to travel based on various criteria such as network traffic,cost and distance.Routing enables communication between different networks and allows the internet to function.
 
 ![Alt text](IMAGES/Pasted%20image%2020230131112022.png)
 
@@ -36,7 +36,7 @@ Routing: in computer networking it refers to the process of forwarding data pack
 	- Contains distances (costs) to reach all other node
 	- Initialliy:
 		- Distance to neighbors ( a simplification for now)=1
-		-  $$ Distance to others ==\infty $$
+		-  $$ Distance\ to\ others ==\infty $$
 	- Routing table reflects node's beliefes
 
 ![Alt text](IMAGES/Pasted%20image%2020230131120518.png)
@@ -83,7 +83,8 @@ Routing: in computer networking it refers to the process of forwarding data pack
 > What if C's update never comes? What if C's information is false?
 > 	The network is partitioned OR G is completely offline
 > Other nodes will continue counting until infinity ( or the distance field reach its max)
-
+> 
+In summary, the count-to-infinity problem is a problem in routing algorithms where two devices have different information about the network and both believe that they have the shortest path to a particular destination, resulting in the distance to the destination increasing indefinitely.
 ## Three Rip Solutions
 
 ###### Option 1 : Infinity is small
@@ -130,6 +131,10 @@ In this approach, the router waits for a specified period of time after receivin
 
 ### OSPF STEPS
 
+`Reliable flooding is a feature of the Open Shortest Path First (OSPF) routing protocol that ensures that all devices on a network receive updated routing information in a timely and consistent manner. In OSPF, each device maintains a database of the network topology and periodically exchanges information with its neighbors to ensure that its routing information is up-to-date. With reliable flooding, the OSPF protocol guarantees that the information is transmitted reliably and that all devices receive the same information. To achieve reliable flooding, OSPF uses a series of mechanisms such as acknowledgements, retransmission, and sequence numbers. When a device receives updated information, it acknowledges the receipt of the information, and the transmitting device retransmits the information until it receives an acknowledgement. This ensures that all devices on the network receive the same information and that the information is transmitted reliably. In summary, reliable flooding in OSPF ensures that all devices on a network receive updated routing information in a timely and consistent manner. This helps to ensure that the network is operating efficiently and that all devices have a consistent view of the network topology.`
+
+`This information is exchanged between devices using OSPF protocol data units (PDUs), also known as link state advertisements (LSAs). LSAs contain information about the network and are originated by each device. The periodic exchange of LSAs ensures that all devices on the network have a consistent view of the network topology, and it helps to ensure that all devices can find the shortest path to any other device on the network. This makes OSPF a scalable and robust routing protocol, capable of adapting to changes in the network topology in real-time. To summarise, the information that is exchanged between devices in OSPF is the database of the network topology, which includes information about the devices, links, and routes on the network. This information is transmitted using LSAs and helps to ensure that all devices on the network have a consistent view of the network topology.
+`
 ![Alt text](IMAGES/Pasted%20image%2020230131124656.png)
 
 ### OSPF FEATURES
