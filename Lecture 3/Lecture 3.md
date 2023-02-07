@@ -96,3 +96,11 @@
 > By combining multiple routers into a single aggregate route, routers can simplify their routing tables and reduce the ammount of routing information that needs to be exchanged between them. This helps improve routing performance and reduce the risk of routing loops.
 
 >In summary, aggregate routes in CIDR is a technique used to simplify routing tables and reduce the ammount of routing information exchanged between routers. By combining multiple routes into a single ,larger route, routers can improve routing performance and reduce the risk of routing loops.
+
+
+
+dest
+and Mask
+
+---
+output
