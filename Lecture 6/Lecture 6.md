@@ -9,6 +9,18 @@
 
 ![Alt text](IMAGES/Pasted%20image%2020230204144001.png)
 
+>IP packets arrive at the LER, where a label is added to each packet. This label is then used to look up the associated FEC, which contains information about how the packet should be forwarded. The packet is then routed to the LSR, where the label is used to forward the packet to its destination. Finally, the LER removes the label before forwarding the packet out of the network.
+
+
+`The LER adds the label to each packet, and the label is then used to look up the associated FEC. The FEC contains information about how the packet should be forwarded, and this information is used by the LSR to forward the packet. Finally, the LER removes the label before forwarding the packet out of the network.`
+
+
+Multi-Protocol Label Switching (MPLS) works by assigning each packet a label. This label is used to tell the network routers where to send the packet. The routers then look up the label in a table and forward the packet accordingly. The steps for this process are as follows: 
+1. Label Edge Routers (LERs) add labels to packets. 
+2. Labeled packets are sent through the network. 
+3. Network routers look up the label in a table and forward the packet accordingly. 
+4. The packet is removed from the network at its destination.
+
 --- 
 >A forwarding equivalence class is a group of messages that are all given the same label by a Label Switched Router (LSR). All messages with the same label (those in the FEC) are routed the same way, regardless of their destination of origin.
 
@@ -20,7 +32,7 @@
 
 LSR (Label Switching Router) and LER (Label Edge Router) are terms used in MPLS (Multiprotocol Label Switching) networking.
 
-- In an MPLS network, an LSR is a router that performs the actual label switching of MPLS packets. LSRs examine the label header of a packet and use this information to forward the packet to the next hop in the network.
+	- In an MPLS network, an LSR is a router that performs the actual label switching of MPLS packets. LSRs examine the label header of a packet and use this information to forward the packet to the next hop in the network.
 - An LER, on the other hand, is a router that is located at the edge of an MPLS network. The LER is responsible for assigning MPLS labels to packets before they enter the MPLS network, and removing the labels from packets when they exit the network.
 - Together, LSRs and LERs form the backbone of the MPLS network, enabling fast and efficient forwarding of MPLS packets through the network. By using MPLS labels to direct packets, MPLS networks can support sophisticated traffic engineering techniques and provide a high degree of network reliability and scalability.
 
@@ -152,6 +164,26 @@ In priority queuing, traffic is divided into different priority levels, with eac
 
 Priority queuing helps to provide a more predictable and consistent network performance for time-sensitive applications, and can also help to improve the overall efficiency of the network by reducing the impact of congestion on high priority traffic.
 
+
+
+Advantages of Packet Queuing (PQ):
+
+1.  Improved bandwidth utilization: PQ allows multiple packets to be sent at once, improving overall bandwidth utilization.
+    
+2.  Prioritization: Packet Queuing allows for prioritization of different types of network traffic. For example, real-time applications like video and voice calls can be given higher priority than less time-sensitive data like file downloads.
+    
+3.  Fairness: PQ algorithms ensure that bandwidth is distributed fairly among all users, even if some users are transmitting more data than others.
+    
+
+Disadvantages of Packet Queuing:
+
+1.  Increased overhead: Packet Queuing requires additional processing power, memory, and storage to implement.
+    
+2.  Complexity: Packet Queuing algorithms can be complex and difficult to implement.
+    
+3.  Latency: PQ algorithms can add additional latency to network traffic, which can be problematic for real-time applications.
+    
+4.  Inefficient use of bandwidth: PQ algorithms can result in inefficient use of bandwidth if they are not properly configured, leading to reduced overall performance.
 ---
 ## Some examples for queuing types
 ![Alt text](IMAGES/Pasted%20image%2020230204152446.png)
