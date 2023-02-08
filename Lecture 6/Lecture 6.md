@@ -229,3 +229,6 @@ Skewing refers to an imbalance in the distribution of network traffic among diff
 Skewing can occur due to a variety of reasons, including differences in the processing capabilities of different resources, imbalanced workload distribution, or network congestion. When skewing occurs, it can lead to a degradation in network performance, as some network resources become overloaded while others remain underutilized.
 
 To address skewing, network administrators can use a variety of techniques, such as load balancing, traffic shaping, or resource allocation, to ensure that network traffic is distributed evenly among all available resources. This helps to improve the overall efficiency of the network and prevent performance degradation due to skewing.
+
+
+`In the context of the Fair Queuing (FQ) scheduling algorithm, "wall clock time" refers to the actual time elapsed since some reference point, typically the start of the system or a particular application. It is used as a basis for determining when a packet should be sent or processed. The FQ algorithm schedules packets based on their priority, which is determined by the time they have been waiting in the queue, relative to the wall clock time. The goal of the FQ algorithm is to provide fair bandwidth allocation to multiple flows, ensuring that no single flow monopolizes the network resources.`
