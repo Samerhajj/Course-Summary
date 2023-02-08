@@ -4,7 +4,7 @@
 	- Supports flexible routing policies
 	- Faster convergence (avoid count-to-infinity
 - Key idea: advertise the entire path
-		- Distance vector:ْsend distance metric per dest d
+			- Distance vector:ْsend distance metric per dest d
 		- Path vector:send the entire path metric per each dest d
 
 ![Alt text](IMAGES/Pasted%20image%2020230201162938.png)
