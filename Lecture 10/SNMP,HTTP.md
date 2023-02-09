@@ -70,3 +70,8 @@ The diagram shows a flow of information between the NMS and the managed devices.
 ![Alt text](IMAGES/Pasted%20image%2020230206122537.png)
 
 `HTTP cookies are small text files stored by a website on a user's device. They are used to store user data such as login information, preferences, shopping cart contents, etc. They can be sent to the server with each request and help maintain state between sessions. Cookies can be set to expire after a certain time, or persist until they are deleted by the user. They are a useful tool for personalizing user experience, but can also raise privacy concerns if used to track user behavior.`
+
+
+1.  Maintaining state at the protocol endpoints: In this approach, the sender and receiver of messages maintain state information about the session, which is updated with each transaction. This approach is often used for protocols such as FTP, where state information is maintained at both the client and server ends.
+    
+2.  In messages: In this approach, state information is included in the messages themselves, typically in the form of HTTP cookies. Cookies are small text files that are stored on the client's computer by the server and are sent back to the server with each subsequent request. This allows the server to maintain state information across multiple transactions.
