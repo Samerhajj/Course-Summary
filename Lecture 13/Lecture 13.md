@@ -15,7 +15,7 @@
 	- Not all senders and receivers are directly connected
 
 
->802.11 operates in a shared medium environment, which means that multiple devices can be using the same radio frequency at the same time. To manage this, it uses a protocol called the Media Access Control (MAC) to organize access to the channel and avoid collisions. Exponential Backoff is an algorithm used by the MAC protocol to resolve collisions that occur when multiple devices attempt to transmit data at the same time. When a collision occurs, each device waits for a random amount of time before attempting to retransmit the data. The waiting time increases exponentially for each subsequent retransmission, to reduce the likelihood of another collision. In summary, 802.11 uses the MAC protocol and the Exponential Backoff algorithm to manage access to the wireless channel and ensure efficient and reliable data transmission over the air.
+>	802.11 operates in a shared medium environment, which means that multiple devices can be using the same radio frequency at the same time. To manage this, it uses a protocol called the Media Access Control (MAC) to organize access to the channel and avoid collisions. Exponential Backoff is an algorithm used by the MAC protocol to resolve collisions that occur when multiple devices attempt to transmit data at the same time. When a collision occurs, each device waits for a random amount of time before attempting to retransmit the data. The waiting time increases exponentially for each subsequent retransmission, to reduce the likelihood of another collision. In summary, 802.11 uses the MAC protocol and the Exponential Backoff algorithm to manage access to the wireless channel and ensure efficient and reliable data transmission over the air.
 
 
 #Backoff
@@ -42,7 +42,7 @@ Exponential backoff is an algorithm used to handle retransmissions of lost or fa
 `Active and passive scanning are two methods used to gather information about wireless networks. The main difference between the two is how they go about collecting that information. Active scanning involves sending probe requests to access points to gather information about the available networks. The access points then respond with probe response messages that contain information such as the network's SSID (Service Set Identifier), channel, and supported data rates. Passive scanning, on the other hand, involves listening to the beacon frames sent out by access points, without sending any probe requests. In this method, the client device listens to the airwaves to gather information about the available networks. Active scanning is faster than passive scanning, but it may also generate more network traffic and potentially interfere with other devices. Passive scanning, on the other hand, is less intrusive and does not generate network traffic, but it may also be slower, as it relies on the access points to transmit beacon frames regularly.`
 
 ![Alt text](IMAGES/Pasted%20image%2020230206153613.png)
-`A wireless access point (WAP) is a device that allows other devices to connect to a wireless network. It acts as a bridge between the wireless devices and the wired network, allowing wireless devices to communicate with each other and with other devices on the wired network. WAPs come in different shapes and sizes, from small standalone device for home networks to large enterprise-grade access points for commercial use. They typically have one or more antennas to broadcast and receive wireless signals, and they support various wireless standards such as 802.11a/b/g/n/ac/ax, to ensure compatibility with different types of wireless devices. WAPs also provide security features, such as encryption and authentication, to protect the wireless network from unauthorized access. They can be configured with different types of security protocols, such as WEP, WPA, and WPA2, to provide different levels of security and protection. In summary, a wireless access point is a crucial element in a wireless network, enabling wireless devices to connect to the network, communicate with each other, and access the Internet or other network resources.
+	`A wireless access point (WAP) is a device that allows other devices to connect to a wireless network. It acts as a bridge between the wireless devices and the wired network, allowing wireless devices to communicate with each other and with other devices on the wired network. WAPs come in different shapes and sizes, from small standalone device for home networks to large enterprise-grade access points for commercial use. They typically have one or more antennas to broadcast and receive wireless signals, and they support various wireless standards such as 802.11a/b/g/n/ac/ax, to ensure compatibility with different types of wireless devices. WAPs also provide security features, such as encryption and authentication, to protect the wireless network from unauthorized access. They can be configured with different types of security protocols, such as WEP, WPA, and WPA2, to provide different levels of security and protection. In summary, a wireless access point is a crucial element in a wireless network, enabling wireless devices to connect to the network, communicate with each other, and access the Internet or other network resources.
 
 ---
 #MAC
@@ -68,6 +68,20 @@ Exponential backoff is an algorithm used to handle retransmissions of lost or fa
 ---
 ## Advanced Capabilities
 ![Alt text](IMAGES/Pasted%20image%2020230206154305.png)
+
+1.  Frame Control: It is a 2-byte field that contains information about the type of frame, its subtype, the presence of any optional fields, and various other control information.
+    
+2.  Duration/ID: It is a 2-byte field that contains the duration of the transmission or the identification of the network.
+    
+3.  Address Fields (1, 2, 3, and 4): These 4-byte fields contain the MAC addresses of the source, destination, and optional transmitting and receiving stations.
+    
+4.  Sequence Control: It is a 2-byte field that contains the sequence number of the frame and a fragment number to indicate if the frame is part of a larger message.
+    
+5.  Payload: It is the data being transmitted, which can include management, control, or data frames.
+    
+6.  Cyclic Redundancy Check (CRC): It is a 4-byte field used for error detection purposes to ensure the integrity of the frame.x
+
+
 ![Alt text](IMAGES/Pasted%20image%2020230206154322.png)
 ![Alt text](IMAGES/Pasted%20image%2020230206154332.png)
 
