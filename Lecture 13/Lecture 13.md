@@ -5,6 +5,8 @@
 - Spread spectrum radio
 	-  2.4 GHz frequency band
 - Bandwidth ranges 1,2,5.5,11,22,54,,Mbps
+`Spread Spectrum radio is a method of transmitting radio signals in which the frequency of the signal is deliberately varied over a wide bandwidth, rather than transmitted at a single frequency. This helps to reduce the signal interference and increase the signal security, making it less susceptible to eavesdropping. It is used in many wireless technologies such as Wi-Fi, Bluetooth, GPS, and mobile networks.`
+
 
 - Like Ethernet, 802.11 has shared medium
 	- Need MAC(uses exponential backoff)
