@@ -104,4 +104,4 @@ In the IPv6 packet format, the "Extensions" refer to the optional fields that ca
 
 `The computer in the IPv4 network receives the IPv6 packets, and if it is capable of handling IPv6, it can process and respond to the communication. If not, the packets are discarded.
 
-`This diagram illustrates a possible solution to the challenge of connecting two networks with different protocols (IPv6 and IPv4), by encapsulating the IPv6 packets inside IPv4 packets, making it possible to traverse the IPv4 network and reach the intended destination.`
+	`This diagram illustrates a possible solution to the challenge of connecting two networks with different protocols (IPv6 and IPv4), by encapsulating the IPv6 packets inside IPv4 packets, making it possible to traverse the IPv4 network and reach the intended destination.`

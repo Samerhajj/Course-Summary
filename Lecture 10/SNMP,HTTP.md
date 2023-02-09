@@ -39,7 +39,7 @@ The diagram shows a flow of information between the NMS and the managed devices.
 -   Value field contains the actual data in the form of nested data items.
 
 ![Alt text](IMAGES/Pasted%20image%2020230206112704.png)
-OID stands for Object Identifier, which is a unique identifier for a managed object in the Simple Network Management Protocol (SNMP) management information base (MIB) hierarchy. It is used to identify a specific information element in the MIB tree and can be represented in a dotted decimal notation. An OID is used to access the value of a managed object in a network device, for example, the IP address, number of received packets, and more.
+	OID stands for Object Identifier, which is a unique identifier for a managed object in the Simple Network Management Protocol (SNMP) management information base (MIB) hierarchy. It is used to identify a specific information element in the MIB tree and can be represented in a dotted decimal notation. An OID is used to access the value of a managed object in a network device, for example, the IP address, number of received packets, and more.
 
 ---
 #HTTP
@@ -68,3 +68,5 @@ OID stands for Object Identifier, which is a unique identifier for a managed obj
 ![Alt text](IMAGES/Pasted%20image%2020230206122400.png)
 ![Alt text](IMAGES/Pasted%20image%2020230206122510.png)
 ![Alt text](IMAGES/Pasted%20image%2020230206122537.png)
+
+`HTTP cookies are small text files stored by a website on a user's device. They are used to store user data such as login information, preferences, shopping cart contents, etc. They can be sent to the server with each request and help maintain state between sessions. Cookies can be set to expire after a certain time, or persist until they are deleted by the user. They are a useful tool for personalizing user experience, but can also raise privacy concerns if used to track user behavior.`
