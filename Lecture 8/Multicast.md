@@ -33,7 +33,7 @@ Multicast is performed at the Network Layer (OSI Layer 3).
 
 ## IGMP
 - Internet Group Management Protocol: between router and hosts on a local area network
-	- Only one router per netowrk(designated)
+	- Only one router per network(designated)
 	 - spanning tree algorithm
 
 Message Types:
