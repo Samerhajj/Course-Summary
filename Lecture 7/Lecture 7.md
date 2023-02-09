@@ -61,7 +61,7 @@ When a packet arrives:
 	- Calculate the dropped probability      ->p
 	- Drop the packet with probability p
 4. If 𝑀𝑎𝑥𝑇ℎ𝑟𝑒𝑠ℎ𝑜𝑙𝑑 ≤ 𝐴𝑣𝑔𝐿𝑒𝑛
-	- Drop tje packet
+	- Drop the packet
 
 Note: Since 𝐴𝑣𝑔𝐿𝑒𝑛 changes slowly over time, the queues may be longer than 𝑀𝑎𝑥𝑇ℎ𝑟𝑒𝑠ℎ𝑜𝑙𝑑 at any given time. – If there is really no room for the packet, (tail) drop ![Alt text](IMAGES/Pasted%20image%2020230205120803.png)
 
@@ -74,7 +74,7 @@ The dropping probability changes over time and is affected by how long it's been
 
 Define MaxP(maximum drop probability)
 - $$TempP = MaxP\ x {(Avglen-MinThreshoold)\over MaxThreshold-MinThreshold}$$
-- $$P= {TempP\over 1-(count-TempP)}$$
+- $$P= {TempP\over 1-(count\ x\ TempP)}$$
 ![Alt text](IMAGES/Pasted%20image%2020230205121134.png)
 
 ## RED Dropping Example 1
